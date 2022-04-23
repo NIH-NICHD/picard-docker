@@ -1,5 +1,6 @@
 # picard-docker
-[![Docker Image CI](https://github.com/adeslatt/picard-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/adeslatt/picard-docker/actions/workflows/docker-image.yml)
+[![Docker](https://github.com/adeslatt/picard-docker/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/adeslatt/picard-docker/actions/workflows/docker-publish.yml)[![Docker Image CI](https://github.com/adeslatt/picard-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/adeslatt/picard-docker/actions/workflows/docker-image.yml)
+
 Build a Container for bioconda picard
 
 Steps to build this docker container.
