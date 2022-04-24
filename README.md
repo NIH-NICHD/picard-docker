@@ -35,3 +35,17 @@ Then mount and use your current directory and call the tool now encapsulated wit
 ```bash
 docker run -it -v $PWD:$PWD -w $PWD picard picard
 ```
+
+## Testing docker with files
+
+Assuming we have the appropriate data files
+
+```bash
+docker run -it -v $PWD:$PWD -w $PWD picard \
+   picard FilterSamReads \
+   REFERENCE_SEQUENCE=data/Homo_sapiens_assembly38.fasta \
+   INPUT=data/HTP0003A.cram \
+   OUTPUT=HTP0003A_filtered.cram \
+   FILTER=includePairedIntervals \
+   INTERVAL_LIST=data/test2.interval_list
+```
